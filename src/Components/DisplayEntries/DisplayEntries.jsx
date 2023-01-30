@@ -1,13 +1,13 @@
 const DisplayEntries = (props) => {
     return (       
-        <table>
-            <thread>
-            <tr>
-                <th>Entry Number</th>
-                <th>Weight</th>
-                <th>Date</th>
-            </tr>
-            </thread>
+        <table className = 'table'>
+            <thead>
+                <tr>
+                    <th>Entry Number</th>
+                    <th>Weight</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
             <tbody> 
             {props.parentEntries.map((entry, index) => {
                 return (
